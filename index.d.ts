@@ -761,6 +761,7 @@ export interface DefaultMetricsCollectorConfiguration<
 	gcDurationBuckets?: number[];
 	eventLoopMonitoringPrecision?: number;
 	labels?: Object;
+	excludedMetrics?: Record<string, boolean>;
 }
 
 export const collectDefaultMetrics: {
